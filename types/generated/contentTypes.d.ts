@@ -531,6 +531,7 @@ export interface ApiContactContact extends Struct.CollectionTypeSchema {
     message: Schema.Attribute.Text;
     phoneNumber: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
+    subject: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
